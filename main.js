@@ -52,9 +52,7 @@ let d20RollImage = document.querySelector('#d20-roll');
 
 let d20RollMean = document.querySelector('#d20-rolls-mean');
 
-// Median
 
-// let d20RollMedian = document.querySelector('#median')
 
 
 
@@ -208,10 +206,8 @@ function d20Roll(){
 twenties.push(result);
 console.log(twenties);
 d20RollMean.innerText = getMean(twenties);
+console.log("Median" + " " + getMedian(twenties));
 
-// Median
-
-// d20RollMedian.innerText = "Median" + " " + getMedian(twenties);
 
 
 
@@ -243,6 +239,7 @@ return total/array.length;
 //         return array[half-1] + array[half] / 2.0;
 //      }
 // }
+
 
 
     
